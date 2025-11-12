@@ -165,3 +165,5 @@ if __name__ == "__main__":
     assert server_key == client_key, "DH key mismatch!"
     print("Shared AES-128 key derived:", client_key.hex())
     print("DH exchange successful!")
+
+# python -m app.crypto.dh

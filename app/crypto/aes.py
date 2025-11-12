@@ -107,3 +107,5 @@ if __name__ == "__main__":
     print(f"Decrypted: {pt}")
     assert pt == msg
     print("AES-128-ECB + PKCS#7 test passed!")
+
+# python -m app.crypto.aes
