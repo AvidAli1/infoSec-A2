@@ -16,7 +16,10 @@ load_dotenv(env_path)
 
 DB_HOST = os.getenv("DB_HOST", os.getenv("MYSQL_HOST", "localhost"))
 DB_USER = os.getenv("DB_USER", os.getenv("MYSQL_USER", "root"))
-DB_PASSWORD = os.getenv("DB_PASSWORD", os.getenv("MYSQL_PASSWORD", ""))
+DB_PASSWORD = os.getenv(
+    "DB_PASSWORD",
+    os.getenv("MYSQL_PASSWORD", os.getenv("MYSQL_PASS", "")),
+)
 DB_NAME = os.getenv("DB_NAME", os.getenv("MYSQL_DB", "securechat"))
 
 print("Loaded ENV:", DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)

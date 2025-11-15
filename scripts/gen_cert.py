@@ -147,3 +147,6 @@ if __name__ == "__main__":
 ############################
 # to run from command line:
 # python scripts/gen_cert.py MyRootCA myserver.example.com server --output_dir certs
+# python scripts/gen_ca.py --ca-name MyRootCA --output-dir certs
+# python scripts/gen_cert.py MyRootCA client.example.com client --output_dir certs
+# python scripts/gen_cert.py MyRootCA myserver.example.com server --output_dir certs
